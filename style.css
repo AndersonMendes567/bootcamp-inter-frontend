@@ -1,0 +1,186 @@
+:root {
+  --primary-color: #FF6E00;
+  --secundary-color: #009EB3;
+
+  --section-height: max-content;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: var(--secundary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #2cafc0;
+}
+
+hr {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 1px;
+  border: none;
+  margin-bottom: 0;
+}
+
+i {
+  margin-right: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+header .intro {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.content-intro {
+  max-width: 600px;
+}
+
+
+.content-intro h1 {
+  color: var(--primary-color);
+}
+
+#info-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #15161B;
+  padding: 40px 20px 20px;
+  font-weight: bold;
+}
+
+main h2 {
+  margin-top: 0;
+  color: var(--secundary-color);
+}
+
+main h2::after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: var(--secundary-color);
+  margin: 8px 0 30px 0;
+  border-radius: 2px;
+}
+
+section {
+  display: flex;
+ 
+}
+
+section .timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: count(var(--section-height));
+}
+
+.timeline .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999999;
+  width: 60px;
+  height: 60px;
+  min-height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+section.active .timeline .icon {
+  background-color: var(--secundary-color);
+}
+
+.icon i {
+  margin: 0 auto;
+  font-size: 25px;
+  color: #fff;
+}
+
+section .timeline .line {
+  display: block;
+  height: 100%;
+  width: 3px;
+  background-color: #999999;
+  flex-shrink: 1;
+}
+
+section.active .timeline .line {
+  background-color: var(--secundary-color);
+}
+
+section .wrapp {
+  padding: 0px 20px 40px;
+  padding-right: 0;
+  width: 100%;
+}
+
+.container  {
+  display: flex;
+  background-color: #3B4651;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container img {
+  margin-right: 20px;
+}
+
+section .content i {
+  display: none;
+  font-size: 24px;
+  color: var(--secundary-color);
+}
+
+section.active .content i {
+  display: inline;
+}
+
+section .content span {
+  display: none;
+}
+
+section.active .content span {
+  display: inline;
+}
+
+.content h3 {
+  line-height: 20px;
+}
+
+.content p {
+  line-height: 25px;
+  font-weight: normal;
+}
+
