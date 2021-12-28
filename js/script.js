@@ -1,0 +1,1 @@
+let descCurso = document.quer
