@@ -1,4 +1,5 @@
 # Bootcamp Inter Front End Developer
+<img src="img/Captura de tela 2021-12-28 205015.png">
 Página de Timeline do meu progresso no bootcamp da DIO.
 Um Desafio de Projeto do bootcamp Inter Frontend Developer da DIO - Digital Inovation One para colocar em prática os conhecimentos de Git e Github. 
 
